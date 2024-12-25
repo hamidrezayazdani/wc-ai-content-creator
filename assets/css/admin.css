@@ -1,0 +1,97 @@
+/* AI Content Creator Admin Styles */
+.wcai-metabox {
+  display: flex;
+  gap: 20px;
+  padding: 12px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.wcai-main-content {
+  flex: 1;
+}
+
+.wcai-prompt-select {
+  margin-bottom: 16px;
+}
+
+.wcai-prompt-select label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.wcai-prompt-content {
+  margin-bottom: 16px;
+}
+
+.wcai-prompt-content label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.wcai-prompt-content textarea {
+  width: 100%;
+  min-height: 350px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.wcai-actions {
+  text-align: right;
+}
+
+.wcai-copy-button {
+  position: relative;
+  transition: all 0.3s ease !important;
+}
+
+.wcai-copy-button.copied {
+  background-color: #4CAF50 !important;
+  border-color: #43A047 !important;
+  color: #fff !important;
+}
+
+/* RTL Support */
+.rtl .wcai-actions {
+  text-align: left;
+}
+
+.rtl .wcai-sidebar {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.wcai-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.wcai-pop {
+  animation: popIn 0.3s ease-in-out;
+}
